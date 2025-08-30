@@ -32,7 +32,7 @@ public class App
 
         System.out.println("--------Check Size ------------");
         arraylisteg.checkSize();
-
+        
         System.out.println("---------Sort Element -----------");
         arraylisteg.sortElement();
         arraylisteg.Dislay();

@@ -23,11 +23,11 @@ public class LinkedListEg {
         {
             System.out.println(i);
         }
-        System.out.println("--------------getfirst---------------");
+        System.out.println("-------------- getfirst ---------------");
         //get element at the beginning of the list
         System.out.println(student.getFirst());
 
-        System.out.println("---------------getlast---------------");
+        System.out.println("--------------- getlast ---------------");
         //get element at the end of the list
         System.out.println(student.getLast());
 
@@ -37,14 +37,14 @@ public class LinkedListEg {
         //Remove the Last element of the List
         student.removeLast();
 
-        System.out.println("--------------remove------------------");
+        System.out.println("-------------- remove ------------------");
         // Check the all operations all performed
         for(String i : student)
         {
             System.out.println(i);
         }
 
-        System.out.println("---------------List in ascending order--------");
+        System.out.println("--------------- List in ascending order --------");
         // to make the list in ascending list
         Collections.sort(student);
         for(String i : student)
@@ -52,7 +52,7 @@ public class LinkedListEg {
             System.out.println(i);
         }
 
-        System.out.println("-----------------List in descending order---------");
+        System.out.println("----------------- List in descending order ---------");
         // to make the list reverse or descending order
         Collections.sort(student,Collections.reverseOrder());
         for(String i : student)
