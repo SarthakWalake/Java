@@ -3,6 +3,7 @@ package com.tap.sarthak.demo;
 import java.util.ArrayList;
 
 import com.tap.sarthak.demo.DataStructure.ArrayListEg;
+import com.tap.sarthak.demo.DataStructure.HashSetEg;
 import com.tap.sarthak.demo.DataStructure.LinkedListEg;
 
 public class App 
@@ -40,5 +41,9 @@ public class App
         System.out.println("-------------Linkedlist-----------");
         LinkedListEg linkedlisteg = new LinkedListEg();
         linkedlisteg.Operation();
+
+        System.out.println("--------------HashSet ------------");
+        HashSetEg hashSetEg = new HashSetEg();
+        hashSetEg.Operation();
     }
 }
