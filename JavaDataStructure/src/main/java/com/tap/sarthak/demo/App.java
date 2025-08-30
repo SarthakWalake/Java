@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import com.tap.sarthak.demo.DataStructure.ArrayListEg;
 import com.tap.sarthak.demo.DataStructure.HashSetEg;
+import com.tap.sarthak.demo.DataStructure.LinkedHashSetEg;
 import com.tap.sarthak.demo.DataStructure.LinkedListEg;
+import com.tap.sarthak.demo.DataStructure.TreeSetEg;
 
 public class App 
 {
@@ -45,5 +47,13 @@ public class App
         System.out.println("--------------HashSet ------------");
         HashSetEg hashSetEg = new HashSetEg();
         hashSetEg.Operation();
+
+        System.out.println("------------TreeSet---------------");
+        TreeSetEg treeSetEg = new TreeSetEg();
+        treeSetEg.Operation();
+
+        System.out.println("----------------LinkedHashSet----------");
+        LinkedHashSetEg linkedHashSetEg = new LinkedHashSetEg();
+        linkedHashSetEg.Operation();
     }
 }

@@ -13,6 +13,7 @@ public class HashSetEg {
         cars.add("Volo");
         cars.add("BMW"); // Duplicate value
         cars.add("Marcedices");
+        //Duplicates like "BMW" will only appear once.
 
         for(String i : cars)
         {
