@@ -114,7 +114,6 @@ public class RegistrationTest {
 
         //submit.click();
         submit = webDriver.findElement(By.id("submit"));
-       // if(enteredUser.equals("sarthakwalake")&&enteredEmail.equals("sarthakwalake@gmail.com")&&enteredPassword.equals("Sarthak")&&selectedGender.equals("male")&&selectedRole.equals("student")&&)
 
        if (enteredUser.equals("sarthakwalake") 
         && enteredEmail.equals("sarthakwalake@gmail.com") 
@@ -127,7 +126,7 @@ public class RegistrationTest {
         && enteredDob.equals("03/02/2004")){
             submit.sendKeys("Login Sucessful");
         }
-        //assertTrue(submit.getAttribute("value").contains("Login Sucessful"));
+        
         assertTrue(submit.getText().contains("Login"));
 
       }
