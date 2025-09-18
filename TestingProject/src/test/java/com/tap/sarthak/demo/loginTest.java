@@ -24,7 +24,7 @@ public class loginTest {
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
-        webDriver.get("D:\\TAP\\GitHub\\TestingProject\\src\\Html\\login.html");
+        webDriver.get("http://127.0.0.1:5501/src/Html/login.html");
     }
 
     @Test
