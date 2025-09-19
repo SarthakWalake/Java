@@ -2,6 +2,7 @@ package com.tap.sarthak.demo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.junit.jupiter.api.AfterAll;
@@ -11,12 +12,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RegistrationTest {
     private static WebDriver webDriver;
+    private static WebDriverWait wait;
 
     @BeforeAll
     static void setup()
@@ -25,6 +29,7 @@ public class RegistrationTest {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.get("http://127.0.0.1:5500/src/Html/Registration.html");
+        wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
     }
 
     @Test
@@ -41,7 +46,7 @@ public class RegistrationTest {
         WebElement comments = webDriver.findElement(By.id("comments"));
         WebElement date = webDriver.findElement(By.id("dob"));
         WebElement submit = webDriver.findElement(By.id("submit"));
-
+        
         try{
             Thread.sleep(2000);
         }catch(Exception e)
@@ -91,6 +96,7 @@ public class RegistrationTest {
             Thread.sleep(2000);
         }catch(Exception e)
         {
+            System.out.println(e);
 
         }
 
@@ -99,36 +105,25 @@ public class RegistrationTest {
             Thread.sleep(2000);
         }catch(Exception e)
         {
-
+             System.out.println(e);
         }
 
-        String enteredUser = username.getAttribute("value");
-        String enteredEmail = email.getAttribute("value");
-        String enteredPassword = password.getAttribute("value");
-        String selectedGender = male.isSelected() ? "male" : (female.isSelected() ? "female" : "none");
-        boolean rememberSelected = checkbox.isSelected();
-        boolean notiSelected = notification.isSelected();
-        String selectedRole = selectRole.getFirstSelectedOption().getText();
-        String enteredComments = comments.getAttribute("value");
-        String enteredDob = date.getAttribute("value");
+       
+        String enteredUsername = username.getAttribute("value");
 
-        //submit.click();
-        submit = webDriver.findElement(By.id("submit"));
+        submit.click();
 
-       if (enteredUser.equals("sarthakwalake") 
-        && enteredEmail.equals("sarthakwalake@gmail.com") 
-        && enteredPassword.equals("Sarthak")
-        && selectedGender.equals("male")  
-        && rememberSelected
-        && notiSelected
-        && selectedRole.equals("Student")
-        && enteredComments.equals("This is the student registration form.")
-        && enteredDob.equals("03/02/2004")){
-            submit.sendKeys("Login Sucessful");
+        wait.until(ExpectedConditions.urlContains("Welcome.html"));
+        WebElement welcome = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
+        assertTrue(welcome.getText().contains("Login successful! Welcome, " + enteredUsername));
+
+        try{
+            Thread.sleep(10000);
         }
-        
-        assertTrue(submit.getText().contains("Login"));
-
+        catch(InterruptedException e)
+        {
+            System.out.println(e);
+        }
       }
       
       @AfterAll
@@ -140,4 +135,3 @@ public class RegistrationTest {
         }
     }
 }
-

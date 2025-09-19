@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    /* Reset default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #b9e9e7, #b7ebecf3);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .welcome-container {
+      background-color: #ffffff;
+      padding: 50px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+      }
+      .welcome-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="message"></h1>
+ 
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get("username");
+    if (username) {
+      document.getElementById("message").textContent ="Login successful! Welcome, " + username;
+    }
+  </script>
+</body>
+</html>
