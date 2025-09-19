@@ -89,17 +89,6 @@ public class TflTest {
             System.out.println(e);
         }
 
-        // WebElement textid = webDriver.findElement(By.id("txtid"));
-        // WebElement txtquantity = webDriver.findElement(By.id("txtquantity"));
-        // WebElement addcart = webDriver.findElement(By.id("add-to-cart"));
-
-        // addcart.click();
-
-        // String afterclickaddcart = webDriver.getCurrentUrl();
-        // System.out.println("Redirected to: " + afterclickaddcart);
-
-        // assertTrue(afterclickaddcart.contains("cart.html"),"Expected redirect to catalog.html but got: " + afterclickaddcart);
-
         WebElement productidentifier=webDriver.findElement(By.id("txtid"));
     productidentifier.sendKeys("9");
     try{
