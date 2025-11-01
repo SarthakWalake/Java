@@ -21,16 +21,16 @@ public class HelloController {
     
     @PostMapping("/data")
     public String postdata(){
-        return "<h1> Data is posting by post</h1>";
+        return "<h1> Data is posting by Post</h1>";
     }
 
     @PutMapping("/data")
     public String putdata(){
-        return "<h1>data by put ..!</h1>";
+        return "<h1>Data by put ..!</h1>";
     }
 
     @DeleteMapping("/data")
     public String delete(){
-        return "<h1>data is delete</h1>";
+        return "<h1>Data is Deleted</h1>";
     }
 }
