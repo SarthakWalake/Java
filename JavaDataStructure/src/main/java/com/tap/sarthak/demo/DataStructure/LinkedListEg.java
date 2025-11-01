@@ -9,7 +9,7 @@ public class LinkedListEg {
     {
         student.add("Sarthak");
         student.add("Nayan");
-        student.add("Naina");
+        student.add("Omkar");
         student.add("vinu");
 
         // add an element to the beginning of the list

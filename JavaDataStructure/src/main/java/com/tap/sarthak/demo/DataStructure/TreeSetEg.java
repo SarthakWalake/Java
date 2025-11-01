@@ -15,6 +15,7 @@ public class TreeSetEg {
         cars.add("Audi");
         cars.add("Mercedies");
         cars.add("BMW"); // Duplicate
+
         //Duplicates like "BMW" will only appear once.
 
         for(String i : cars)
