@@ -30,7 +30,11 @@ public class ArrraySearch {
 
             if(flag == true)
             {
-                System.out.println(search+"Found ");
+                System.out.println(search+"Found at loction "+(i+1));
+            }
+            else
+            {
+                System.out.println(search+" Not found in arry");
             }
         }
     }
