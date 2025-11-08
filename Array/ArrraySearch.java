@@ -34,7 +34,7 @@ public class ArrraySearch {
             }
             else
             {
-                System.out.println(search+" Not found in arry");
+                System.out.println(search+" Not found in array");
             }
         }
     }
