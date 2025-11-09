@@ -36,8 +36,12 @@ public class SumDiagonal {
         {
             for(int j =0;j<arr1.length;j++)
             {
-                if()
+                if(i+j == 2)
+                {
+                    sumd1 = sumd1 +arr1[i][j];
+                }
             }
         }
+        System.out.println("Sum of the Diagonal is  "+sumd1);
     }
 }
