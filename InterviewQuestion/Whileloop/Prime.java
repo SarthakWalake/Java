@@ -14,5 +14,8 @@ public class Prime {
                 count++;
             }
         }
+
+        if (count == 2)
+            System.out.println("Number is prime");
     }
 }
