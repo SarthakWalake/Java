@@ -26,7 +26,7 @@ public class PrimeCheck {
             {
                 System.out.println(n);
             }
-            n = n
+            n = n + 1;
         }
     }
 }
