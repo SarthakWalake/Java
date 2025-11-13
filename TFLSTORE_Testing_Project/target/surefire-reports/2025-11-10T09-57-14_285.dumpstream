@@ -1,0 +1,5 @@
+# Created at 2025-11-10T09:57:14.631
+Boot Manifest-JAR contains absolute paths in classpath 'D:\TAP\GitHub\Java\TFLSTORE_Testing_Project\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
