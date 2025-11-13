@@ -26,6 +26,7 @@ public class PrimeCheck {
             {
                 System.out.println(n);
             }
+            n = n
         }
     }
 }
