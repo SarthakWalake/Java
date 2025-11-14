@@ -18,6 +18,8 @@ public class SpyNum {
         {
             rem = n % 10;
             sum = sum + rem;
+            multi = multi * multi;
+            n = n / 10;
         }
     }
 }
