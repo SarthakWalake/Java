@@ -9,5 +9,8 @@ public class SpyNum {
         int rem = 0;
         int sum = 0;
         int multi = 1;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
     }
 }
