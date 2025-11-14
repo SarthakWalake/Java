@@ -12,5 +12,12 @@ public class SpyNum {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
+        n = sc.nextInt();
+
+        while(n>0)
+        {
+            rem = n % 10;
+            sum = sum + rem;
+        }
     }
 }
