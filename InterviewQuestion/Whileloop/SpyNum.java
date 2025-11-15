@@ -21,5 +21,10 @@ public class SpyNum {
             multi = multi * multi;
             n = n / 10;
         }
+
+        if(sum == rem)
+        {
+            
+        }
     }
 }
