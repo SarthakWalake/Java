@@ -9,22 +9,26 @@ public class SpyNum {
         int rem = 0;
         int sum = 0;
         int multi = 1;
-
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
         n = sc.nextInt();
+        int n1 = n;
 
         while(n>0)
         {
             rem = n % 10;
             sum = sum + rem;
-            multi = multi * multi;
+            multi = multi * rem;
             n = n / 10;
         }
 
-        if(sum == rem)
+        if(sum == multi)
         {
-            
+            System.out.println(n1+" Is a Spy number");
+        }
+        else{
+            System.out.println(n1+" Is not a Spy number");
         }
     }
 }
