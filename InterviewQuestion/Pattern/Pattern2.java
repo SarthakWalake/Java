@@ -4,11 +4,11 @@
 3   2   1
 2   1
 1
- */
+*/
 
- import java.util.*;
+import java.util.*;
 
- class Pattern2{
+class Pattern2{
     public static void main(String [] args)
     {
         for(int i =5;i >= 1;i--)
