@@ -10,9 +10,9 @@ public class Pattern4 {
     {
     for(int i = 5; i >= 1;i--)
         {
-        for(int j = i;j <= 1;j--)
+        for(int j = 1;j <= i;j++)
         {
-            System.out.print(j+" ");
+            System.out.print(i+" ");
         }
        System.out.println();
         }
