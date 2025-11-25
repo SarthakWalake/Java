@@ -15,7 +15,11 @@ public class Pattern5 {
         {
             for(k=i;k<=5;k++)
             {
-                
+                System.out.println(" ");
+            }
+            for(j=1;j<i;j++)
+            {
+                System.out.println(j+" ");
             }
         }
     }
