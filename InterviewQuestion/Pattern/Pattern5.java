@@ -21,6 +21,11 @@ public class Pattern5 {
             {
                 System.out.println(j+" ");
             }
+            for(l=j;l>=1;l--)
+            {
+                System.out.println(l+" ");
+            }
+            
         }
     }
 }
